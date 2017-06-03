@@ -35,6 +35,10 @@ module Motion
       def loading(mask = :none)
         show('Loading...', mask)
       end
+      
+      def loading_with_message(message = "Loading...", mask = :none)
+        show(message, mask)
+      end
 
       def dismiss
         hud_class.dismiss
